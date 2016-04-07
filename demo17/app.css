@@ -1,0 +1,10 @@
+body,html{margin:0;padding: 0;}
+header *{
+    display: inline;
+    margin: 1em;
+}
+
+header{
+    border-bottom: 1px solid black;
+    padding: 1.0rem 0
+}
