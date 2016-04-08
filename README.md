@@ -51,7 +51,7 @@ $ webpack-dev-server
 
 Webpack 是前端构建工具，类似于 `gulp` 和 `grunt`，相对于 `gulp` 和 `grunt`，构建起来相对复杂一点点。这里有官方文档介绍 [Webpack](http://webpack.github.io/docs/what-is-webpack.htm)
 
-第一个简单的例子[demo01](#)首先得有 一个配置文件`webpack.config.js` 记得名字，必须得这样，Webpack可以直接识别配置文件。
+第一个简单的例子[demo01](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo01)首先得有 一个配置文件`webpack.config.js` 记得名字，必须得这样，Webpack可以直接识别配置文件。
 
 ```js
 module.exports = {
@@ -124,7 +124,7 @@ $ webpack-dev-server
 
 加载预处理插件，可将 `JSX/ES6` 转换成 `js` 文件。官方完整的[加载列表](http://webpack.github.io/docs/list-of-loaders.html)
 
-接下来这个例子[demo02](#)依赖下面的包工具
+接下来这个例子[demo02](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo02)依赖下面的包工具
 
 ```bash
 npm install babel-loader babel-preset-es2015 babel-preset-react react react-dom --save
@@ -191,7 +191,7 @@ module.exports = {
 
 ## CSS加载
 
-Webpack允许你在js文件中引入CSS文件，然后用 `CSS-loader` 对CSS文件进行预处理，这个例子[demo03](#)依赖`CSS-loader` 和 `style-loader`。
+Webpack允许你在js文件中引入CSS文件，然后用 `CSS-loader` 对CSS文件进行预处理，这个例子[demo03](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo03)依赖`CSS-loader` 和 `style-loader`。
 安装依赖
 
 ```bash
@@ -256,7 +256,7 @@ module.exports = {
 
 ## 图片加载
 
-图片加载需要依赖 `file-loader` 和 `url-loader` ，安装依赖。[demo04](#)
+图片加载需要依赖 `file-loader` 和 `url-loader` ，安装依赖。[demo04](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo04)
 
 ```bash
 npm install url-loader file-loader --save
@@ -308,7 +308,7 @@ module.exports = {
 
 ## CSS组件加载
 
-`css-loader?modules` (查询模块的参数) 使用[CSS模块](https://github.com/css-modules/css-modules)的规格。加载CSS模块默认是本地作用域，如果你要将CSS作用于全局，你得将选择器放入global中如`:global(.h2)` [demo05](#)
+`css-loader?modules` (查询模块的参数) 使用[CSS模块](https://github.com/css-modules/css-modules)的规格。加载CSS模块默认是本地作用域，如果你要将CSS作用于全局，你得将选择器放入global中如`:global(.h2)` [demo05](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo05)
 
 index.html
 
@@ -373,7 +373,7 @@ module.exports = {
 
 ## UglifyJs插件
 
-Webpack 有插件系统来扩展其功能。例如：[UglifyJs Plugin](http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin)将 `main.js` 输出压缩版本的 `bundle.js` [demo06](#)，[UglifyJS 参数设置](https://github.com/mishoo/UglifyJS2#usage)。
+Webpack 有插件系统来扩展其功能。例如：[UglifyJs Plugin](http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin)将 `main.js` 输出压缩版本的 `bundle.js` [demo06](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo06)，[UglifyJS 参数设置](https://github.com/mishoo/UglifyJS2#usage)。
 
 
 main.js
@@ -418,7 +418,7 @@ module.exports = {
 
 ## HTML Webpack插件
 
-[html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin) 能创建`index.html` 文件。
+[html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin) 能创建`index.html` 文件。[demo07](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo07)
 
 main.js
 
@@ -446,7 +446,7 @@ module.exports = {
 
 ## 命令启动打开入口路径
 
-[open-browser-webpack-plugin](https://github.com/baldore/open-browser-webpack-plugin) 这是一个傻叉的包工具，就一个特别方便的功能，就是在你运行`webpack-dev-server`命令的时候，自动打开`http://localhost:8080/` 你配置的网址。[demo08](#)
+[open-browser-webpack-plugin](https://github.com/baldore/open-browser-webpack-plugin) 这是一个傻叉的包工具，就一个特别方便的功能，就是在你运行`webpack-dev-server`命令的时候，自动打开`http://localhost:8080/` 你配置的网址。[demo08](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo08)
 稍做更改`webpack.config.js`中的 module.exports.plugins 添加一个插件。
 
 ```js 
@@ -463,7 +463,7 @@ plugins: [
 
 ## 环境变量玩儿法
 
-[demo09](#) 只有在开发环境中使用环境变量，才能使某些代码起作用。
+[demo09](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo09) 只有在开发环境中使用环境变量，才能使某些代码起作用。
 
 main.js
 ```js
@@ -513,7 +513,7 @@ $ DEBUG=true webpack-dev-server
 
 ## 代码分割
 
-这个非常重要，构建大型应用的时候，你需要将你的代码分模块，不然你的js越来越大，加载速度越来越慢，分块也适合项目模块化，多人共同应用开发。我们在下面的例子[demo10](#) 用的是CommonJs 的加载方式 `require.ensure` 你可以到官网看跟多的模块加载方式[在这里>>](http://webpack.github.io/docs/code-splitting.html)
+这个非常重要，构建大型应用的时候，你需要将你的代码分模块，不然你的js越来越大，加载速度越来越慢，分块也适合项目模块化，多人共同应用开发。我们在下面的例子[demo10](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo10) 用的是CommonJs 的加载方式 `require.ensure` 你可以到官网看跟多的模块加载方式[在这里](http://webpack.github.io/docs/code-splitting.html)
 
 main.js
 
@@ -557,7 +557,7 @@ module.exports = {
 
 ## 用bundle-loader分割代码
 
-此功能需要安装[bundle-loader](https://www.npmjs.com/package/bundle-loader) [demo11](#) 这个例子只要将 demo10 的例子中的`main.js`文件改改就可以了，然后安装依赖。
+此功能需要安装[bundle-loader](https://www.npmjs.com/package/bundle-loader) [demo11](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo11) 这个例子只要将 [demo10](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo10) 的例子中的`main.js`文件改改就可以了，然后安装依赖。
 
 ```bash
 $ npm install --save bundle-loader
@@ -579,7 +579,7 @@ load(function(file) {
 
 ## 普通模块React应用
 
-[demo12](#)当多个脚本有共同的部分，可以提取公共部分为一个单独的文件使用commonschunkplugin方法。
+[demo12](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo12)当多个脚本有共同的部分，可以提取公共部分为一个单独的文件使用commonschunkplugin方法。
 
 ```js
 // main1.jsx
@@ -647,7 +647,7 @@ module.exports = {
 
 ## jQuery加载
 
-[demo13](#)可以提取一些热门库如`jQuery`，我这个例子就加载一下`JSLite`吧，从脚本到一个单独文件也使用`commonschunkplugin`方法。
+[demo13](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo13)可以提取一些热门库如`jQuery`，我这个例子就加载一下`JSLite`吧，从脚本到一个单独文件也使用`commonschunkplugin`方法。
 
 你需要安装它们才能加载
 
@@ -697,7 +697,7 @@ module.exports = {
 
 ### 每个模块中使用JSLite或者jQuery
 
-[demo14](#)这个是有我们要使用 `ProvidePlugin` 方法。[官方文档](http://webpack.github.io/docs/shimming-modules.html)
+[demo14](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo14)这个是有我们要使用 `ProvidePlugin` 方法。[官方文档](http://webpack.github.io/docs/shimming-modules.html)
 
 index.html 
 
@@ -740,7 +740,7 @@ module.exports = {
 
 ## 暴露全局变量
 
-[demo15](#)可以在 `webpack.config.js` 中使用 `externals`。[官方文档](http://webpack.github.io/docs/library-and-externals.html)
+[demo15](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo15)可以在 `webpack.config.js` 中使用 `externals`。[官方文档](http://webpack.github.io/docs/library-and-externals.html)
 
 例如我们有一个`data.js`
 
@@ -789,7 +789,7 @@ ReactDOM.render(
 ```
 
 ## 模块热替换
-[demo16](#)[hot module replacement with webpack](https://github.com/webpack/docs/wiki/hot-module-replacement-with-webpack) [翻译](https://segmentfault.com/a/1190000003872635) [官方文档Hot Module Replacement](https://github.com/webpack/docs/wiki/hot-module-replacement-with-webpack) 添加或删除模块，在运行应用程序时，无需重新加载刷新页面。现在有[两种方法](http://webpack.github.io/docs/webpack-dev-server.html#hot-module-replacement)让webpack服务端模块热更换。
+[demo16](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo16)[hot module replacement with webpack](https://github.com/webpack/docs/wiki/hot-module-replacement-with-webpack) [翻译](https://segmentfault.com/a/1190000003872635) [官方文档Hot Module Replacement](https://github.com/webpack/docs/wiki/hot-module-replacement-with-webpack) 添加或删除模块，在运行应用程序时，无需重新加载刷新页面。现在有[两种方法](http://webpack.github.io/docs/webpack-dev-server.html#hot-module-replacement)让webpack服务端模块热更换。
 
 ### 使用webpack命令的两个子命令
 
@@ -879,7 +879,7 @@ export default class Main extends Component {
 
 ## React 路由
 
-[demo17](#) 使用`Webpack` 使用[React-router](https://github.com/reactjs/react-router/tree/master/docs) 建立路由。这里需要安装`react-router`依赖，v2.x 的React-router与v1.x有区别所以你还是要看看[官方文档](https://github.com/reactjs/react-router/blob/master/upgrade-guides/v2.0.0.md)。
+[demo17](https://github.com/jaywcjlove/webpack-react-demo/tree/master/demo17) 使用`Webpack` 使用[React-router](https://github.com/reactjs/react-router/tree/master/docs) 建立路由。这里需要安装`react-router`依赖，v2.x 的React-router与v1.x有区别所以你还是要看看[官方文档](https://github.com/reactjs/react-router/blob/master/upgrade-guides/v2.0.0.md)。
 
 ```bash 
 $ npm install --save React-router
