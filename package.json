@@ -4,7 +4,9 @@
   "description": "这个仓库是我学习和收集的一些WebPack插件、例子和这些插件的简单应用以及笔记。",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --devtool eval --progress --colors",
+    "deploy": "NODE_ENV=production webpack -p"
   },
   "author": "",
   "license": "MIT",
