@@ -17,8 +17,8 @@ $ npm i -g webpack webpack-dev-server
 接下来克隆这个仓库和安装它的依赖
 
 ```bash
-$ git clone https://github.com/jaywcjlove/webpack-demos.git
-$ cd webpack-demos
+$ git clone https://github.com/jaywcjlove/webpack-react-demo.git 
+$ cd webpack-react-demo
 $ npm install
 ```
 
@@ -33,7 +33,7 @@ $ webpack-dev-server
 
 上面的 `webpack` `webpack-dev-server` 是全局安装，你也可以不用全局安装，放到你的 `package.json` 文件中，例如：
 
-```json 
+```bash 
 {
   // ...
   "scripts": {
