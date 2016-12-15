@@ -135,6 +135,7 @@ npm install babel-loader babel-preset-es2015 babel-preset-react react react-dom 
 ```html 
 <html>
 <body>
+    <div id="wrapper"></div>
     <script type="text/javascript" src="bundle.js"></script>
 </body>
 </html>
