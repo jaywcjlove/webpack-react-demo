@@ -1,9 +1,5 @@
 这个仓库是以前学习和收集的一些WebPack插件和例子，和对这些插件简单的应用。主要是玩转`Webpack` 和`React`。参考阮大大的例子[ruanyf/webpack-demos](https://github.com/ruanyf/webpack-demos) ，更容易读懂。还有尤小右大大的例子[vuejs-templates/webpack](https://github.com/vuejs-templates/webpack)和[vuejs-templates/webpack-simple](https://github.com/vuejs-templates/webpack-simple) 在 `Webpack` 中应用 `vue`，参考这些例子结合官方文档看，慢慢就玩转 [Webpack](https://webpack.github.io/) 和 [React](http://facebook.github.io/react/)。
 
-其它例子你可以研究研究 😄
-
-- [redux应用的例子](https://github.com/matthew-sun/redux-example) [说明文档](http://www.cnblogs.com/matthewsun/p/4773646.html)
-- [React+Redux系列教程](https://github.com/lewis617/react-redux-tutorial)
 
 # 目录
 
@@ -939,3 +935,10 @@ Browser history 是由 React Router 创建浏览器应用推荐的 history。它
 <Route path="/files/*.*">           // 匹配 /files/hello.jpg 和 /files/hello.html
 <Route path="/**/*.jpg">            // 匹配 /files/hello.jpg 和 /files/path/to/file.jpg
 ```
+
+# 学习资料
+
+其它例子你可以研究研究 😄
+
+- [redux应用的例子](https://github.com/matthew-sun/redux-example) [说明文档](http://www.cnblogs.com/matthewsun/p/4773646.html)
+- [React+Redux系列教程](https://github.com/lewis617/react-redux-tutorial)
